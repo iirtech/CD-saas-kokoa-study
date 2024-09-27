@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: saas-kokoa-study
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: saas-kokoa-study
+  template:
+    metadata:
+      labels:
+        app: saas-kokoa-study
+    spec:
+      containers:
+      - name: saas-kokoa-study
+        image: jeunsu1/saas-kokoa-study:latest
+        ports:
+        - containerPort: 4000
