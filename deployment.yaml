@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: saas-kokoa-study
-        image: jeunsu1/saas-kokoa-study:latest
+        image: jeunsu1/saas-kokoa-study:1.0
         ports:
         - containerPort: 4000
